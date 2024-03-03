@@ -1,0 +1,13 @@
+# Virtual environment and pycharm
+Lib/
+Scripts/
+.venv/
+.idea/
+pyvenv.cfg
+__pycache__/
+
+# PDF directory and files
+pdfs/
+
+# Result files
+*-results.txt
