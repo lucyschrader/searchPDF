@@ -39,7 +39,7 @@ def search_page(page, page_num, search_string):
 	if page_text:
 		res_search = re.search(search_string, page_text)
 		if res_search:
-			res_string = str(page_text[res_search.start() - 30:res_search.end() + 30]).replace("\n"," ")
+			res_string = str(page_text[res_search.start() - 100:res_search.end() + 100]).replace("\n"," ")
 			return "Found on page {p}: {r}".format(p=page_num, r=res_string)
 	return None
 
@@ -52,7 +52,7 @@ def export_results(results, search_string):
 
 
 search_string = input("Search term: ")
-pdf_dir = "pdfs"
+pdf_dir = "researchexpeditionpdfs"
 pdf_list = list_files(pdf_dir)
 results = search_all_files(pdf_list=pdf_list, pdf_dir=pdf_dir, search_string=search_string)
 if len(results) > 0:

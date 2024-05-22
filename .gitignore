@@ -8,6 +8,7 @@ __pycache__/
 
 # PDF directory and files
 pdfs/
+researchexpeditionpdfs/
 
 # Result files
 *-results.txt
